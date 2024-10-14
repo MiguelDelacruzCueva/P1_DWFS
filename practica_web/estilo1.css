@@ -1,0 +1,177 @@
+body{
+    background-image: url('https://images.pexels.com/photos/28849652/pexels-photo-28849652/free-photo-of-luna-creciente-en-un-cielo-nocturno-estrellado.jpeg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    justify-content: center; 
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #30333e;
+    color: #ffbf00;
+    text-align: center;
+    padding: 10px;
+}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 5 em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    
+}
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    margin: 1.5em;
+    /* height: 70px; */
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 1em;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 1em;
+}
+
+.nav-link {
+    display: flex;
+    color: white;
+    text-decoration: none;
+
+    
+}
+.nav-link:hover {
+    color: #5853e5;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+.menu-icono {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+} 
+h2{
+    color:blanchedalmond;
+    text-align: center;
+}
+p{
+    color:#ffffff;
+    font-size: 1.1em;
+    text-align:justify;
+    margin: 1em;
+
+}
+.container {
+    display: flex;
+    background-color: #171133;
+    align-items: center;
+    justify-content: center;
+    margin:5%;
+    border-radius: 1cm;
+    
+    /* height: 50vh; */
+
+
+}
+.container2{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgb(41, 1, 39);
+    box-shadow: 0 0 10px rgba(96, 1, 108, 0.819); 
+}
+
+.container img {
+    max-width: 500px; 
+    margin-right: 20px; 
+    border-radius: 2cm;
+    margin: 2em;
+}
+iframe{
+    margin: 2px;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.diseño{
+    display:flow-root;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2em;
+    color: white;
+    /* font-size: 1.5em; */
+}
+.diseño img{
+    max-width: 50%;
+    margin: 2em;
+}
+.loguito{
+    width: 180px;
+    height: 160px;
+    border-radius: 30%;
+
+}
+button{
+    background-color: #5853e5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1em;
+}
+button:hover{
+    background-color: #fbfbfb;
+    color: #5853e5;
+
+}
+
+
+@media screen and (max-width: 900px){
+    h1{
+        font-size: 3em;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 50%;
+    }
+    .nav-item {
+        margin: 10px 0;
+    }
+    .menu-icono {
+        display: block;
+    }
+    .nav-list.active {
+        display: flex;
+    }
+    .container {
+        flex-direction: column;
+    }
+    
+}
+   

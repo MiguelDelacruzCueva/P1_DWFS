@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Distancias Espaciales</title>
+    <style>
+        body {
+            background-image: url('pixelcut-export.jpeg');
+            background-size: cover;
+            position: relative;
+            
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+            
+           
+        }
+       
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        .container{
+            background-color: white;
+            margin: 0 auto ;
+            justify-content: center;
+
+            max-width: 1000px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Calculadora de Distancias Espaciales</h1>
+        <input type="text" id="nombreUsuario" placeholder="Ingresa tu nombre">
+        <button onclick="calcularDistancia('luna')">Distancia a la Luna</button>
+        <button onclick="calcularDistancia('sol')">Distancia al Sol</button>
+        <button onclick="calcularDistancia('marte')">Distancia a Marte</button>
+
+    </main>
+    <script>
+        function calcularDistancia(cuerpoCeleste) {
+            const nombre = document.getElementById('nombreUsuario').value;
+            if (!nombre) {
+                alert('Por favor, ingresa tu nombre.');
+                return;
+            }
+
+            let distancia;
+            switch(cuerpoCeleste) {
+                case 'luna':
+                    distancia = '384,400 km';
+                    break;
+                case 'sol':
+                    distancia = '149,600,000 km';
+                    break;
+                case 'marte':
+                    distancia = '225,000,000 km';
+                    break;
+                default:
+                    distancia = 'Desconocida';
+            }
+            alert(`${nombre}, tú estás a ${distancia} de la ${cuerpoCeleste.charAt(0).toUpperCase() + cuerpoCeleste.slice(1)}.`);
+        }
+    </script>
+</body>
+</html>
