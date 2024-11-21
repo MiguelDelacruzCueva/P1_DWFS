@@ -9,6 +9,7 @@ body{
     justify-content: center; 
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 header{
     background-color: #230d58;
@@ -92,6 +93,7 @@ p{
     justify-content: center;
     margin:5%;
     border-radius: 1cm;
+   
     
     /* height: 50vh; */
 
@@ -101,15 +103,18 @@ p{
     max-width: 1000px;
     margin: 0 auto;
     padding: 50px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 10px rgba(229, 217, 217, 0.819); 
+   
 }
 
 .container img {
-    max-width: 500px; 
+    width: 90%;
+    height: auto;
+    max-width: 700px ; 
     margin-right: 20px; 
     border-radius: 2cm;
-    margin: 2em;
+    margin: 1.5em;
 }
 iframe{
     margin: 2px;
